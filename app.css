@@ -1,38 +1,91 @@
-/* * {
+* {
   box-sizing: border-box;
   margin: 0;
-} */
+}
+
+main {
+  display: grid;
+  grid-template: 100vh 100vh 100vh / 100vw;
+  grid-template-areas: 
+    "about"
+    "projects"
+    "contact";
+}
 
 ul {
   list-style-type: none;
+  padding: 0;
 }
 
 .nav-header {
   display: flex;
   justify-content: center;
+  margin: 15px;
 } 
 
-h1 {
+h1, h2 {
   font-family: 'Montserrat', sans-serif;
 }
 
 .about {
+  display: grid;
+  grid-template-columns: 15vw 35vw 35vw 15vw;
+  grid-template-rows: 25vh 30vh 30vh 10vh 5vh;
+  grid-template-areas: 
+    ". header header ."
+    ". about about ."
+    ". skills skills ."
+    ". footer footer ."
+    ". . . .";
+  grid-area: about;
+}
+
+.about header {
+  grid-area: header;
   display: flex;
   flex-direction: column;
   align-items: center;
-  /* text-align: center; */
+  align-self: flex-end;
 }
 
-.about article {
+.fas.fa-user-astronaut {
+  font-size: 5em;
+  margin-bottom: 20px;
+}
+
+.about .about-me {
+  grid-area: about;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.about-me h1 {
   display: flex;
   justify-content: center;
 }
 
-.about p {
-  width: 50%;
+.about .skills {
+  grid-area: skills;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.skills h1 {
+  text-align: center;
+}
+
+.about a {
+  grid-area: footer;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 2em;
 }
 
 .projects {
+  grid-area: projects;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -46,6 +99,7 @@ h1 {
 }
 
 .contact {
+  grid-area: contact;
   display: flex;
   flex-direction: column;
   align-items: center;
