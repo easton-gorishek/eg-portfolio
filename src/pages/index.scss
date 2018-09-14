@@ -1,4 +1,16 @@
 @import url('https://fonts.googleapis.com/css?family=Montserrat');
-h1, h2 {
+
+* {
+  margin: 0;
+}
+
+html {
+  scroll-behavior: smooth;
+  background: #eeeeee;
+}
+
+h1, h2, a {
   font-family: 'Montserrat', sans-serif;
 }
+
+

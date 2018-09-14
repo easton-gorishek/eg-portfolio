@@ -1,23 +1,36 @@
 import React from "react";
+import styles from './projects.scss';
 
 export default () => (
-  <div>
+  <div className={styles.projects} id="projects">
     <header>
       <h1>Projects</h1>
     </header>
-    <div>
-      <section>
+    <section>
+      <div>
         <i className="far fa-image"></i>
         <p>A short description</p>
-      </section>
-      <section>
+      </div>
+      <div>
         <i className="far fa-image"></i>
         <p>A short description</p>
-      </section>
-      <section>
+      </div>
+      <div>
         <i className="far fa-image"></i>
         <p>A short description</p>
-      </section>
-    </div>
+      </div>
+      <div>
+        <i className="far fa-image"></i>
+        <p>A short description</p>
+      </div>
+      <div>
+        <i className="far fa-image"></i>
+        <p>A short description</p>
+      </div>
+      <div>
+        <i className="far fa-image"></i>
+        <p>A short description</p>
+      </div>
+    </section>
   </div>
 );

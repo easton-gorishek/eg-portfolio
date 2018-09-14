@@ -1,0 +1,28 @@
+:local(.projects) {
+  display: grid;
+  grid-template-rows: 30vh 70vh;
+  // grid-template-columns: 100vh;
+  // display: flex;
+  // flex-direction: column;
+  // align-items: center;
+  // justify-content: center;
+  // height: 100vh;
+  // margin-bottom: 10vh;
+
+  header {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    // margin-bottom: 2em;
+    color: #222831;
+  }
+
+  section {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-gap: 10px;
+    // width: 100vw;
+    text-align: center;
+    color: #222831;
+  }
+}
